@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])) {
-    include_once('conexao.php');
+    include_once('connection.php');
 
     $nome = $_POST['nome'];
     $data_nascimento = $_POST['data_nascimento'];
