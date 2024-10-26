@@ -3,7 +3,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "academia3";
+    $dbname = "SpartaAcademy";
 
     $conexao = new mysqli($servername, $username, $password, $dbname);
     if ($conexao->connect_error) {
