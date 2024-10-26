@@ -1,0 +1,6 @@
+CREATE DATABASE SpartaAcademy;
+
+CREATE TABLE Register (
+    Nome VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL
+);
