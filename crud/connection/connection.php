@@ -5,8 +5,8 @@
     $password = "";
     $dbname = "spartaacademy";
 
-    $conexao = new mysqli($servername, $username, $password, $dbname);
-    if ($conexao->connect_error) {
-        die("Connection failed: " . $conexao->connect_error);
+    $connection = new mysqli($servername, $username, $password, $dbname);
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
     }
 ?>

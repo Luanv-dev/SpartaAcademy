@@ -1,15 +1,11 @@
 <?php
 if(isset($_POST['submit'])) {
-    include_once('/crud/connection/connection.php');
+    include_once('../../crud/connection/connection.php');
 
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    // Proteção contra SQL Injection
-    $name = mysqli_real_escape_string($connection, $name);
-    $email = mysqli_real_escape_string($connection, $email);
-
-    $query = "INSERT INTO register (nome, email) 
+    $query = "INSERT INTO register (name, email) 
               VALUES ('$name','$email')";
 
     $result = mysqli_query($connection, $query);
