@@ -13,8 +13,8 @@
             <h1 class="display-5 fw-bold text-body-emphasis">Sparta Academy</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Bem-vindo à Sparta Academy! Estamos entusiasmados em tê-lo conosco nesta jornada de condicionamento físico e bem-estar. Aproveite ao máximo nossos recursos e suporte para alcançar seus objetivos.</p>
-                <a href="" class="btn btn-primary btn-lg px-4 gap-3">Cadastro</a>
-                <a href="/crud/register/registerClient.html" class="btn btn-outline-secondary btn-lg px-4">Secondary</a>
+                <a href="registerClient.php" class="btn btn-primary btn-lg px-4 gap-3">Cadastro</a>
+                <a href="registerClient.php" class="btn btn-outline-secondary btn-lg px-4">Secondary</a>
               </div>
             </div>
           </div>
