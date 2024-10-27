@@ -1,3 +1,25 @@
+<?php
+if(isset($_POST['submit'])) {
+    include_once('../../crud/connection/connection.php');
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    // Prevenir SQL Injection usando prepared statements
+    $stmt = $connection->prepare("INSERT INTO register (name, email) VALUES (?, ?)");
+    $stmt->bind_param("ss", $name, $email);
+
+    if($stmt->execute()) {
+        echo "Cadastro realizado com sucesso!";
+    } else {
+        echo "Erro ao cadastrar: " . $stmt->error;
+    }
+
+    $stmt->close();
+    $connection->close();
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
