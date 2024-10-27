@@ -20,3 +20,4 @@ if(isset($_POST['submit'])) {
         echo "Erro ao cadastrar: " . mysqli_error($connection);
     }
 }
+?>
