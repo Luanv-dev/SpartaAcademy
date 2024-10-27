@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])) {
-    include_once('../../crud/connection/connection.php');
+    include_once('connection.php');
 
     $name = $_POST['name'];
     $email = $_POST['email'];
