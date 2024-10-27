@@ -2,15 +2,11 @@
 if(isset($_POST['submit'])) {
     include_once('connection.php');
 
-    $nome = $_POST['nome'];
-    $data_nascimento = $_POST['data_nascimento'];
-    $CPF = $_POST['CPF'];
-    $telefone = $_POST['telefone'];
-    $celular = $_POST['celular'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
 
-    $query = "INSERT INTO cadastro (nome, data_nascimento, CPF, telefone, celular, email) 
-              VALUES ('$nome', '$data_nascimento', '$CPF', '$telefone', '$celular', '$email')";
+    $query = "INSERT INTO register (nome, email) 
+              VALUES ('$name','$email')";
 
     $result = mysqli_query($connection, $query);
 
